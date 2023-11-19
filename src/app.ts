@@ -306,6 +306,12 @@ app.get(
 //   }
 // });
 
+app.use("/home",(req,res)=>{
+  res.json({
+    msg:"Hi Deployment successfull--agter github pipeline"
+  })
+})
+
 //testing translation
 app.use("/api/v1", router);
 // routes

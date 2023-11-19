@@ -250,6 +250,11 @@ app.get("/api/v1/notifications/:employeeId", async (req, res) => {
 //     res.status(500).json({ error: 'Translation failed' });
 //   }
 // });
+app.use("/home", (req, res) => {
+    res.json({
+        msg: "Hi Deployment successfull--agter github pipeline"
+    });
+});
 //testing translation
 app.use("/api/v1", translate_1.default);
 // routes
